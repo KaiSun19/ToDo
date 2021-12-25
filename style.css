@@ -1,0 +1,170 @@
+*{
+    margin: 0 0 0 0 ;
+    padding: 0 0 0 0 ;
+}
+
+.search{
+    width: 100%;
+    height: 44px;
+    display: flex;
+    align-items: flex-start;
+    background-color: #2c2c2c;
+    color:#dbdbdb
+}
+
+#search-icon{
+    margin-left: 1%;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    height:22px;
+    color:#dbdbdb
+}
+
+.searchbar{
+    height: 22px;
+    margin-top: 10px;
+    margin-left: 1%;
+    color: none;
+    margin-bottom: 2%;
+}
+
+input[type="text"],textarea{
+    background-color: #dbdbdb;
+    border:none;
+    border-radius: 5px;
+    text-indent: 10px;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.header{
+    width:100%;
+    height:220px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradientBG 15s ease infinite;
+    position: relative;
+
+}
+
+.date{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+#refreshButton{
+
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: xx-large;
+    position: absolute;
+    right:0;
+    bottom:0;
+    color: white;
+}
+
+.content{
+    margin-left: 20px;
+    margin-top:20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow-y: hidden;
+    overflow: hidden;
+}
+
+ul{
+    height: 390px;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+ul > div > li{
+    margin-top:10px;
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+    font-family: 'Roboto Mono', monospace;
+    align-items: baseline;
+    transition: ease-in 0.1s;
+}
+
+.co{
+    margin-right: 20px;
+    font-size: x-large;
+}
+
+.co:hover{
+    cursor: pointer;
+}
+
+.de{
+    position: absolute;
+    right:0px;
+    margin-right:50px;
+    font-size: x-large;
+}
+
+.de:hover{
+    cursor: pointer;
+}
+
+.add-item{
+    position: absolute;
+    bottom: 0px;
+    left:0px;
+    margin-bottom:10px;
+    margin-left:5px;
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    border-top: #2c2c2c solid 1px;
+}
+
+.add-item > i{
+    margin-top: 10px;
+    font-size: xx-large;
+    margin-right: 10px;
+}
+
+.add-item > input{
+    margin-top: 10px;
+}
+
+hr{
+    position: relative;
+    top: 100px;
+}
+
+#refreshButton:hover{
+    cursor: pointer;
+}
+
+@keyframes append-animate {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;	
+	}
+}
+
+.toDoItem{
+    animation: append-animate .3s ease-in-out;
+
+}
